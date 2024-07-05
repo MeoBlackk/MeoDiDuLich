@@ -11,13 +11,15 @@
 
         <link rel="stylesheet" href="css/styles.css">
 
+
         <title>MeoDiDuLich</title>
     </head>
     <body>
+        
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">MeoDiDuLich</a>
-
+                
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -29,11 +31,14 @@
                         <li class="nav__item">
                             <a href="#lienhe" class="nav__link">Liên hệ</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#place" class="nav__link">Đăng Nhập</a>
+                        <li class="nav__item" id="dang-nhap-item">
+                            <a href="dangnhap.html" class="nav__link" id="userName">Đăng Nhập</a>
                         </li>
+                        <li class="nav__item">
+                            <span id="ten" class="nav__link"></span>
+                        </li>
+                        <a href="dangnhap.html" id="logOutBtn" style="display: none;"class="nav__link">Đăng xuất</a>
                     </ul>
-
                     <div class="nav__dark">
                         <span class="change-theme-name">Dark mode</span>
                         <i class="ri-moon-line change-theme" id="theme-button"></i>
@@ -82,7 +87,7 @@
             <!--ĐẶT VÉ-->
             
             <section class="datve section" id="datve">
-                <img src="img/quat.png" class="img-vn discover__img">
+                <img src="img/dulich.png" class="img-vn discover__img">
                 <div class="container">
                     
                     <form class="search-form">
@@ -94,7 +99,6 @@
                                 <option>Đà nẵng</option>
                                 <option>Tp.HCM</option>
                                 <option>Cà mau</option>
-                                <option>Tầng 18:))</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -173,68 +177,7 @@
                 </div>
             </section>
             
-            <!--  
-            <section class="discover section" id="discover">
-                <h2 class="section__title">Những Địa Điểm <br> Du Lịch Đáng Thử</h2>
-                
-                <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="discover__card swiper-slide">
-                            <img src="img/hanoi.png" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Hà Nội</h2>
-                                <span class="discover__description">12 Tour</span>
-                            </div>
-                        </div>
-
-                        <div class="discover__card swiper-slide">
-                            <img src="img/hcm.png" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Tp.Hồ Chí Minh</h2>
-                                <span class="discover__description">15 Tour</span>
-                            </div>
-                        </div>
-
-                        <div class="discover__card swiper-slide">
-                            <img src="img/dn1.png" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Đà Nắng</h2>
-                                <span class="discover__description">18 tours </span>
-                            </div>
-                        </div>
-
-                        <div class="discover__card swiper-slide">
-                            <img src="img/phutho1.png" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Phú Thọ</h2>
-                                <span class="discover__description">32 tours </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>  -->
-
-           
-            <section class="video section">
-                <h2 class="section__title">Video Tour</h2>
-        
-                <div class="video__container container">
-                    <p class="video__description">Hãy xem video :))
-                    </p>
-        
-                    <div class="video__content">
-                        <video id="video-file" class="video__file">
-                            <source src="vd/video.mp4" type="video/mp4">
-                            
-                        </video>
-                        
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button>
-                        
-                    </div>
-                </div>
-            </section>
+          
 
             <section class="place section" id="place">
                 <h2 class="section__title">ĐỀ XUẤT CHO BẠN</h2>
@@ -267,7 +210,6 @@
                             ĐẶT VÉ
                         </button>
                     </div>
-                    <!-- Thêm các place__card  -->
                     <div class="place__card">
                         <img src="img/hanoi.png" alt="" class="place__img">    
                         <div class="place__content">
@@ -451,6 +393,8 @@
         
         <script src="js/swiper-bundle.min.js"></script>
 
-        <script src="js/index.js"></script>
+        <script src="js/index1.js"></script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 </html>
